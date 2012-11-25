@@ -1,6 +1,6 @@
 <?php
 /**
- * Index template, calls the engine function.
+ * This file calls the loader from lib
  *
  * This is a core file and should not be directly edited. Please use a child.
  *
@@ -12,4 +12,4 @@
  * @since       0.1
  */
 
-engine();
+require_once( dirname( __FILE__ ) . 'lib/loader.php' );
