@@ -18,7 +18,7 @@
     <head>
         <meta charset="utf-8">
         <?php
-        // located in /lib/plumbing/header.php
+        // triggers code located in /lib/plumbing/header.php
         do_action( 'rad_meta' );
         // default WP head hook
         wp_head(); ?>
