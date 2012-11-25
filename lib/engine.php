@@ -8,7 +8,7 @@
  * @package     Core
  * @subpackage  Engine
  * @author      Paul Edmon Graham
- * @license     http://www.mozilla.org/MPL/
+ * @license     http://www.mozilla.org/MPL/2.0/
  * @link        http://github.com/bytefair/rad
  */
 
