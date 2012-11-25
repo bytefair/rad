@@ -19,10 +19,10 @@ add_action( 'rad_loader', 'rad_define_constants' );
  * @since 0.1
  */
 function rad_define_constants() {
-    // directories
+    // basic directories
     define( 'PARENT_DIR', get_template_directory() );
     define( 'CHILD_DIR', get_stylesheet_directory() );
-    //
+    // RAD framework directories
     define( 'RAD_LIB_DIR', PARENT_DIR . '/lib' );
 }
 
