@@ -6,7 +6,7 @@
  *
  * @category    RAD
  * @package     Core
- * @subpackage  Engine
+ * @subpackage  Loader
  * @author      Paul Edmon Graham
  * @license     http://www.mozilla.org/MPL/2.0/
  * @link        http://github.com/bytefair/rad
@@ -19,9 +19,10 @@ add_action( 'rad_loader', 'rad_define_constants' );
  * @since 0.1
  */
 function rad_define_constants() {
+    // directories
     define( 'PARENT_DIR', get_template_directory() );
     define( 'CHILD_DIR', get_stylesheet_directory() );
-
+    //
     define( 'RAD_LIB_DIR', PARENT_DIR . '/lib' );
 }
 

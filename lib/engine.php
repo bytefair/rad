@@ -18,11 +18,7 @@
  * @since 0.1
  */
 function engine() {
-    do_action( 'rad_pre_header' );
     get_header();
-    do_action( 'rad_post_header' );
 
-    do_action( 'rad_pre_footer' );
     get_footer();
-    do_action( 'rad_post_footer' );
 }
