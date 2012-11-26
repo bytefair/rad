@@ -1,6 +1,6 @@
 <?php
 /**
- * Index template, calls the engine function.
+ * Header template, calls the engine function.
  *
  * This is a core file and should not be directly edited. Please use a child.
  *
