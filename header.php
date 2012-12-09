@@ -27,3 +27,6 @@
         <?php
         do_action( 'rad_pre_wrapper' ); ?>
         <div class="site-wrapper">
+            <header id="masthead" class="site-header" role="banner">
+                <?php do_action( 'rad_pre_header' ); ?>
+            </header>
