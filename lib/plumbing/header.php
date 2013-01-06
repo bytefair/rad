@@ -30,7 +30,11 @@ add_action( 'rad_doctype', 'rad_opening_html_tag' );
  * @since 0.1
  */
 function rad_opening_html_tag() {
-    echo '<html class="no-js">';
+    $html  = '<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->';
+    $html .= '<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->';
+    $html .= '<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->';
+    $html .= '<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->';
+    echo $html;
 }
 
 add_action( 'rad_meta', 'rad_viewport_tag' );
