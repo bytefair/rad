@@ -13,6 +13,37 @@
  */
 
 
+add_action( 'rad_doctype', 'rad_doctype_tag' );
+/**
+ * Defines an HTML5 doctype
+ *
+ * @since 0.1
+ */
+function rad_doctype_tag() {
+    echo '<!DOCTYPE html>';
+}
+
+add_action( 'rad_doctype', 'rad_opening_html_tag' );
+/**
+ * Generates the opening tag, in this case has a class for Modernizr
+ *
+ * @since 0.1
+ */
+function rad_opening_html_tag() {
+    echo '<html class="no-js">';
+}
+
+add_action( 'rad_meta', 'rad_viewport_tag' );
+/**
+ * Defines a default viewport for responsive development
+ *
+ * @since 0.1
+ */
+function rad_viewport_tag() {
+    echo '<meta name="viewport" content="width-device-width">';
+}
+
+
 add_action( 'rad_meta', 'rad_xua_tag' );
 /**
  * Defines an X-UA-Compatible tag to help IE be less stupid

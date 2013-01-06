@@ -20,7 +20,6 @@
  */
 function engine() {
     get_header(); ?>
-
     <div class="site-content" role="main">
         <?php
         do_action( 'rad_before_content' );

@@ -11,13 +11,10 @@
  * @link        http://github.com/bytefair/rad
  * @since       0.1
  */
-?>
 
-
-<!DOCTYPE html>
-<html >
+do_action( 'rad_doctype' ); ?>
     <head>
-        <meta charset="utf-8">
+        <meta charset="<?php bloginfo( 'charset' ); ?>">
         <?php
         // triggers code located in /lib/plumbing/header.php
         do_action( 'rad_meta' );
