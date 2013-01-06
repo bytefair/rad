@@ -11,3 +11,11 @@
  * @link        http://github.com/bytefair/rad
  * @since       0.1
  */
+
+
+?><div id="sidebar" class="sidebar">
+    <?php
+    do_action( 'rad_before_sidebar' );
+    do_action( 'rad_sidebar' );
+    do_action( 'rad_after_sidebar ' ); ?>
+</div>
