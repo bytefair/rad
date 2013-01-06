@@ -13,8 +13,9 @@
  */
 ?>
 
+
 <!DOCTYPE html>
-<html>
+<html >
     <head>
         <meta charset="utf-8">
         <?php
@@ -27,6 +28,16 @@
         <?php
         do_action( 'rad_before_wrapper' ); ?>
         <div class="site-wrapper">
-            <header id="masthead" class="site-header" role="banner">
-                <?php do_action( 'rad_header' ); ?>
-            </header>
+            <header class="site-header" role="banner">
+                <?php
+                do_action( 'rad_before_header' );
+                do_action( 'rad_header' );
+                do_action( 'rad_after_header' );
+                ?>
+                <nav class="site-navigation" role="navigation">
+                    <?php
+                    do_action( 'rad_before_nav' );
+                    do_action( 'rad_nav' );
+                    do_action( 'rad_after_nav' ); ?>
+                </nav><!-- end .site-navigation -->
+            </header><!-- end #masthead .site-header -->
