@@ -23,6 +23,7 @@ function rad_doctype_tag() {
     echo '<!DOCTYPE html>';
 }
 
+
 add_action( 'rad_doctype', 'rad_opening_html_tag' );
 /**
  * Generates the opening tag, in this case has a class for Modernizr
@@ -36,6 +37,7 @@ function rad_opening_html_tag() {
     $html .= '<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->';
     echo $html;
 }
+
 
 add_action( 'rad_meta', 'rad_viewport_tag' );
 /**
@@ -69,6 +71,7 @@ function rad_title_generator() {
     // this will probably be replaced by something more SEO friendly in the future
     echo '<title>' . wp_title( '|', true, 'right' ) . '</title>';
 }
+
 
 add_action( 'rad_meta', 'rad_wp_network_tags' );
 /**
