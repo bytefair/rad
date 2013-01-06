@@ -40,6 +40,7 @@ function rad_load_files() {
     require_once( RAD_LIB_DIR . '/engine.php' );
     // load the plumbing
     require_once( RAD_PLUMBING_DIR . '/header.php' );
+    require_once( RAD_PLUMBING_DIR . '/footer.php' );
     require_once( RAD_PLUMBING_DIR . '/loops.php' );
 }
 
