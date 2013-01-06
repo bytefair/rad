@@ -1,4 +1,4 @@
-# RAD - A Toolbox for WordPress
+# [RAD](http://bytefair.github.com/rad) - A Toolbox for WordPress
 
 ## What is RAD?
 
@@ -13,12 +13,3 @@ development and thought it seemed like a great idea to make a companion suite of
 software to use in future sites. RAD is meant to be easily updatable and
 extendable so as to always follow the best practices of website development and
 WordPress capability.
-
-## What are all these comments?
-
-In lieu of code, there are places where there are notes or comments. These are
-meant to be placeholders for real code in the future. Rather than leave notes in
-an abstract TODO or notes file, I'd rather they be part of the living codebase
-for now. RAD is meant to be heavily commented though. You're going to be
-developing on child themes anyway, so don't worry about it, it's only for
-documentation purposes.
