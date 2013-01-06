@@ -1,6 +1,7 @@
 <?php
 /**
- * Header template, calls the engine function.
+ * Header template, called by the engine function. Related code can be found
+ * inside /lib/plumbing/header.php
  *
  * This is a core file and should not be directly edited. Please use a child.
  *
@@ -16,7 +17,6 @@ do_action( 'rad_doctype' ); ?>
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <?php
-        // triggers code located in /lib/plumbing/header.php
         do_action( 'rad_meta' );
         // default WP head hook
         wp_head(); ?>
