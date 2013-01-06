@@ -14,7 +14,7 @@
 
 
 /**
- * The main function of RAD. It loads the header, footer, and basic hooks.
+ * The main function of RAD. It loads the header, footer, and content hooks.
  *
  * @since 0.1
  */
