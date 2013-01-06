@@ -25,7 +25,9 @@ function engine() {
         <?php
         do_action( 'rad_before_content' );
         do_action( 'rad_content' );
-        do_action( 'rad_after_content' ); ?>
+        do_action( 'rad_after_content' );
+
+        get_sidebar(); ?>
     </div><!-- end .site-content -->
 
     <?php
