@@ -27,6 +27,7 @@ function rad_define_constants() {
     define( 'RAD_PLUMBING_DIR', PARENT_DIR . '/lib/plumbing' );
 }
 
+
 add_action( 'rad_loader', 'rad_load_files' );
 /**
  * Loads all the toolkit's PHP files.
@@ -40,6 +41,7 @@ function rad_load_files() {
     require_once( RAD_PLUMBING_DIR . '/header.php' );
     require_once( RAD_PLUMBING_DIR . '/loops.php' );
 }
+
 
 /* run all the functions linked to loader */
 do_action( 'rad_loader' );

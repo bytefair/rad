@@ -25,8 +25,8 @@
     </head>
     <body <?php body_class(); ?>>
         <?php
-        do_action( 'rad_pre_wrapper' ); ?>
+        do_action( 'rad_before_wrapper' ); ?>
         <div class="site-wrapper">
             <header id="masthead" class="site-header" role="banner">
-                <?php do_action( 'rad_pre_header' ); ?>
+                <?php do_action( 'rad_header' ); ?>
             </header>

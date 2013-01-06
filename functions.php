@@ -2,7 +2,7 @@
 /**
  * This file calls the loader from lib
  *
- * This is a core file and should not be directly edited. Please use a child.
+ * This is a core file and should not be directly edited. Please use a child theme.
  *
  * @category    RAD
  * @package     Templates
