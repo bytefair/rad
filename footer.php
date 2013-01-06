@@ -13,7 +13,15 @@
  */
 ?>
 
-
+        <footer class="site-footer" role="contentinfo">
+            <div class="site-info">
+                <?php
+                do_action( 'rad_before_footer' );
+                do_action( 'rad_footer' );
+                do_action( 'rad_after_footer' );
+                ?>
+            </div>
+        </footer><!-- end .site-footer -->
         </div><!-- end .site-wrapper -->
         <?php
         do_action( 'rad_after_wrapper' );
