@@ -12,7 +12,9 @@
  * @since       0.1
  */
 ?>
-        </div><!-- end .site-wrapper -->
+
+
+        </div><!-- end .site -->
         <?php
         do_action( 'rad_after_wrapper' );
         //default WP footer hook

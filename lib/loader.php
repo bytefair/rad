@@ -12,6 +12,7 @@
  * @link        http://github.com/bytefair/rad
  */
 
+
 add_action( 'rad_loader', 'rad_define_constants' );
 /**
  * Defines any constants used
@@ -24,7 +25,7 @@ function rad_define_constants() {
     define( 'CHILD_DIR', get_stylesheet_directory() );
     // RAD framework directories
     define( 'RAD_LIB_DIR', PARENT_DIR . '/lib' );
-    define( 'RAD_PLUMBING_DIR', PARENT_DIR . '/lib/plumbing' );
+    define( 'RAD_PLUMBING_DIR', RAD_LIB_DIR . '/plumbing' );
 }
 
 
