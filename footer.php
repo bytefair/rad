@@ -11,8 +11,9 @@
  * @link        http://github.com/bytefair/rad
  * @since       0.1
  */
-?>
-        <footer class="site-footer" role="contentinfo">
+
+
+?>      <footer id="site-footer" class="site-footer" role="contentinfo">
             <div class="site-info">
                 <?php
                 do_action( 'rad_before_footer' );

@@ -25,16 +25,16 @@ do_action( 'rad_doctype' ); ?>
         <?php
         do_action( 'rad_before_wrapper' ); ?>
         <div class="site-wrapper">
-            <header class="site-header" role="banner">
+            <header id="site-header" class="site-header" role="banner">
                 <?php
                 do_action( 'rad_before_header' );
                 do_action( 'rad_header' );
                 do_action( 'rad_after_header' );
                 ?>
-                <nav class="site-navigation" role="navigation">
+                <nav id="site-navigation" class="site-navigation" role="navigation">
                     <?php
                     do_action( 'rad_before_nav' );
                     do_action( 'rad_nav' );
                     do_action( 'rad_after_nav' ); ?>
                 </nav><!-- end .site-navigation -->
-            </header><!-- end #masthead .site-header -->
+            </header><!-- end .site-header -->
