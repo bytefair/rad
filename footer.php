@@ -18,8 +18,7 @@
                 <?php
                 do_action( 'rad_before_footer' );
                 do_action( 'rad_footer' );
-                do_action( 'rad_after_footer' );
-                ?>
+                do_action( 'rad_after_footer' ); ?>
             </div>
         </footer><!-- end .site-footer -->
         </div><!-- end .site-wrapper -->
