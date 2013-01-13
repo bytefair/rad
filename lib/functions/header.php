@@ -25,8 +25,7 @@ function rad_site_title() {
     $site_title_string  = '<h1 id="site-title" class="site-title">';
     $site_title_string .= '<a href="' . $site_url . '" rel="home">';
     $site_title_string .= $site_title;
-    $site_title_string .= '</a>';
-    $site_title_string .= '</h1>';
+    $site_title_string .= '</a></h1>';
 
     echo $site_title_string;
 }
@@ -40,6 +39,7 @@ function rad_site_description() {
     $site_description = esc_html( get_bloginfo( 'description' ) );
     echo '<h2 id="site-description" class="site-description">' . $site_description . '</h2>';
 }
+
 
 add_filter( 'rad_do_hgroup_wrapper', 'rad_hgroup_wrapper_filter', 10, 1 );
 /**
