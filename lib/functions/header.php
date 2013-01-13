@@ -18,9 +18,9 @@
  * @return string H1 using site title
  */
 function rad_site_title() {
-    $site_title         = get_bloginfo( 'name' );
+    $site_title         = esc_html( get_bloginfo( 'name' ) );
     $site_title_attr    = esc_attr( get_bloginfo( 'name', 'display' ) );
-    $site_url           = esc_url( home_url( '/' ) );
+    $site_url           = esc_url( trailingslashit ( home_url() ) );
 
     $site_title_string  = '<h1 id="site-title" class="site-title">';
     $site_title_string .= '<a href="' . $site_url . '" rel="home">';
@@ -37,7 +37,7 @@ function rad_site_title() {
  * @return string H2 using site description
  */
 function rad_site_description() {
-    $site_description = get_bloginfo( 'description' );
+    $site_description = esc_html( get_bloginfo( 'description' ) );
     echo '<h2 id="site-description" class="site-description">' . $site_description . '</h2>';
 }
 
