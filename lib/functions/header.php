@@ -27,7 +27,7 @@ function rad_site_title() {
     $site_title_string .= $site_title;
     $site_title_string .= '</a></h1>';
 
-    echo $site_title_string;
+    return $site_title_string;
 }
 
 /**
@@ -37,11 +37,10 @@ function rad_site_title() {
  */
 function rad_site_description() {
     $site_description = esc_html( get_bloginfo( 'description' ) );
-    echo '<h2 id="site-description" class="site-description">' . $site_description . '</h2>';
+    return '<h2 id="site-description" class="site-description">' . $site_description . '</h2>';
 }
 
 
-add_filter( 'rad_do_hgroup_wrapper', 'rad_hgroup_wrapper_filter', 10, 1 );
 /**
  * Adds hgroup wrapper to passed HTML string
  *
@@ -50,7 +49,7 @@ add_filter( 'rad_do_hgroup_wrapper', 'rad_hgroup_wrapper_filter', 10, 1 );
  * @param string The HTML a user desires to be wrapped in hgroup
  * @return string The original HTML wrapped in the default hgroup element
  */
-function rad_hgroup_wrapper_filter( $input ) {
+function rad_header_group( $input ) {
     $output = '<hgroup>' . $input . '</hgroup>';
     return $output;
 }

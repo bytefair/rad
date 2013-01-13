@@ -81,7 +81,9 @@ add_action( 'rad_meta', 'rad_wp_network_tags' );
  */
 function rad_wp_network_tags() {
     echo '<link rel="profile" href="http://gmpg.org/xfn/11">';
-    echo '<link rel="pingback" href="' . get_bloginfo( 'pingback_url' ) . '" />';
+    if ( 'open' == get_option( 'default_ping_status' ) ) {
+        echo '<link rel="pingback" href="' . get_bloginfo( 'pingback_url' ) . '" />';
+    }
 }
 
 
@@ -93,9 +95,10 @@ add_action( 'rad_header', 'rad_do_header_structure' );
  *
  * @uses rad_site_title()
  * @uses rad_site_description()
+ * @uses rad_header_group()
  */
 function rad_do_header_structure() {
     $header  = rad_site_title();
     $header .= rad_site_description();
-    echo apply_filters( 'rad_do_hgroup_wrapper', $header );
+    echo rad_header_group( $header );
 }
