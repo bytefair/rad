@@ -25,13 +25,14 @@ do_action( 'rad_doctype' ); ?>
         <?php
         do_action( 'rad_before_wrapper' ); ?>
         <div class="site-wrapper">
+            <?php
             do_action( 'rad_before_site' ); ?>
             <header id="site-header" class="site-header" role="banner">
                 <?php
                 do_action( 'rad_before_header' );
                 do_action( 'rad_header' );
                 do_action( 'rad_after_header' );
-                if (current_theme_supports( 'menus' ) : ?>
+                if ( current_theme_supports( 'menus' ) ) : ?>
                     <nav id="site-navigation" class="site-navigation" role="navigation">
                         <?php
                         do_action( 'rad_before_nav' );
