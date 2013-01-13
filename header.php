@@ -31,11 +31,13 @@ do_action( 'rad_doctype' ); ?>
                 do_action( 'rad_before_header' );
                 do_action( 'rad_header' );
                 do_action( 'rad_after_header' );
-                ?>
-                <nav id="site-navigation" class="site-navigation" role="navigation">
-                    <?php
-                    do_action( 'rad_before_nav' );
-                    do_action( 'rad_nav' );
-                    do_action( 'rad_after_nav' ); ?>
-                </nav><!-- end .site-navigation -->
+                if (current_theme_supports( 'menus' ) : ?>
+                    <nav id="site-navigation" class="site-navigation" role="navigation">
+                        <?php
+                        do_action( 'rad_before_nav' );
+                        do_action( 'rad_nav' );
+                        do_action( 'rad_after_nav' ); ?>
+                    </nav><!-- end .site-navigation -->
+                <?php
+                endif ?>
             </header><!-- end .site-header -->
