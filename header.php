@@ -25,6 +25,7 @@ do_action( 'rad_doctype' ); ?>
         <?php
         do_action( 'rad_before_wrapper' ); ?>
         <div class="site-wrapper">
+            do_action( 'rad_before_site' ); ?>
             <header id="site-header" class="site-header" role="banner">
                 <?php
                 do_action( 'rad_before_header' );

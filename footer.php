@@ -23,6 +23,7 @@
         </footer><!-- end .site-footer -->
         </div><!-- end .site-wrapper -->
         <?php
+        do_action( 'rad_after_site' );
         do_action( 'rad_after_wrapper' );
         wp_footer(); ?>
     </body>
