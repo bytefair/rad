@@ -18,8 +18,17 @@
  * @return string H1 using site title
  */
 function rad_site_title() {
-    $site_title = get_bloginfo( 'name' );
-    echo '<h1 id="site-title" class="site-title">' . $site_title . '</h1>';
+    $site_title         = get_bloginfo( 'name' );
+    $site_title_attr    = esc_attr( get_bloginfo( 'name', 'display' ) );
+    $site_url           = esc_url( home_url( '/' ) );
+
+    $site_title_string  = '<h1 id="site-title" class="site-title">';
+    $site_title_string .= '<a href="' . $site_url . '">';
+    $site_title_string .= $site_title;
+    $site_title_string .= '</a>';
+    $site_title_string .= '</h1>';
+
+    echo $site_title_string;
 }
 
 /**
