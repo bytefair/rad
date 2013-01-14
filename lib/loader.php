@@ -26,6 +26,8 @@ function rad_define_constants() {
     // RAD framework directories
     define( 'RAD_LIB_DIR', PARENT_DIR . '/lib' );
     define( 'RAD_PLUMBING_DIR', RAD_LIB_DIR . '/plumbing' );
+    define( 'RAD_MODULES_DIR', RAD_LIB_DIR . '/modules' );
+    define( 'RAD_TEMPLATES_DIR', RAD_LIB_DIR . '/templates' );
 }
 
 
@@ -42,6 +44,9 @@ function rad_load_files() {
     require_once( RAD_PLUMBING_DIR . '/header.php' );
     require_once( RAD_PLUMBING_DIR . '/footer.php' );
     require_once( RAD_PLUMBING_DIR . '/loops.php' );
+    // load the content templates
+    require_once( RAD_TEMPLATES_DIR . '/404.php' );
+    require_once( RAD_TEMPLATES_DIR . '/no-results.php' );
 }
 
 
