@@ -22,12 +22,13 @@ add_action ( 'rad_execute_nav', 'rad_nav_structure' );
 function rad_nav_structure() {
     if ( current_theme_supports( 'menus' ) ) {
         $nav_open  = '<nav id="site-navigation" class="site-navigation" role="navigation">';
-        $nav_close = '</nav>';
-
         echo apply_filters( 'rad_site_nav_element_open', $nav_open );
+
         do_action( 'rad_before_nav' );
         do_action( 'rad_nav' );
         do_action( 'rad_after_nav' );
+
+        $nav_close = '</nav>';
         echo apply_filters( 'rad_site_nav_element_close', $nav_close );
     }
 }

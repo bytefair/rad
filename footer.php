@@ -20,8 +20,8 @@
                 do_action( 'rad_footer' );
                 do_action( 'rad_after_footer' ); ?>
             </div>
-        </footer><!-- end .site-footer -->
-        </div><!-- end .site-wrapper -->
+        </footer>
+        </div>
         <?php
         do_action( 'rad_after_site' );
         do_action( 'rad_after_wrapper' );

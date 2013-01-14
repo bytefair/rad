@@ -19,16 +19,20 @@
  * @since 0.1
  */
 function engine() {
-    get_header(); ?>
-    <div id="site-content" class="site-content" role="main">
-        <?php
-        do_action( 'rad_before_content' );
-        do_action( 'rad_content' );
-        do_action( 'rad_after_content' );
+    $site_open  = '<div id="site-content" class="site-content" role="main">';
+    $site_close = '</div>';
 
-        get_sidebar(); ?>
-    </div><!-- end .site-content -->
+    get_header();
 
-    <?php
+    apply_filters( 'rad_site_div_element_open', $site_open );
+
+    do_action( 'rad_before_content' );
+    do_action( 'rad_content' );
+    do_action( 'rad_after_content' );
+
+    get_sidebar();
+
+    apply_filters( 'rad_site_div_element_close', $site_close );
+
     get_footer();
 }
