@@ -25,7 +25,6 @@ function rad_define_constants() {
     define( 'CHILD_DIR', get_stylesheet_directory() );
     // RAD framework directories
     define( 'RAD_LIB_DIR', PARENT_DIR . '/lib' );
-    define( 'RAD_FUNCTIONS_DIR', RAD_LIB_DIR . '/functions' );
     define( 'RAD_PLUMBING_DIR', RAD_LIB_DIR . '/plumbing' );
 }
 
@@ -37,8 +36,6 @@ add_action( 'rad_loader', 'rad_load_files' );
  * @since 0.1
  */
 function rad_load_files() {
-    // load the pre-theme helper functions
-    require_once( RAD_FUNCTIONS_DIR . '/header.php' );
     // load the engine
     require_once( RAD_LIB_DIR . '/engine.php' );
     // load the plumbing
