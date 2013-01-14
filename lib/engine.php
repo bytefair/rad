@@ -19,12 +19,10 @@
  * @since 0.1
  */
 function engine() {
-    $site_open  = '<div id="site-content" class="site-content" role="main">';
-    $site_close = '</div>';
-
     get_header();
 
-    apply_filters( 'rad_site_div_element_open', $site_open );
+    $site_open  = '<div id="site-content" class="site-content" role="main">';
+    echo apply_filters( 'rad_site_div_element_open', $site_open );
 
     do_action( 'rad_before_content' );
     do_action( 'rad_content' );
@@ -32,7 +30,8 @@ function engine() {
 
     get_sidebar();
 
-    apply_filters( 'rad_site_div_element_close', $site_close );
+    $site_close = '</div>';
+    echo apply_filters( 'rad_site_div_element_close', $site_close );
 
     get_footer();
 }
