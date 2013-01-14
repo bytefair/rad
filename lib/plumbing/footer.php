@@ -24,6 +24,6 @@ function rad_generator_credits() {
     $defaults .= ' <a href="http://wordpress.org" title="';
     $defaults .= esc_attr__( 'A Semantic Personal Publishing Platform', 'rad' );
     $defaults .= '" rel="generator">WordPress</a> ' . __( 'and', 'rad' );
-    $defaults .= '<a href="http://bytefair.github.com/rad" title="RAD" rel="nofollow">RAD</a>';
+    $defaults .= ' <a href="http://bytefair.github.com/rad" title="RAD" rel="nofollow">RAD</a>';
     echo apply_filters( 'rad_generator_credits', $defaults );
 }

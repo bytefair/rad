@@ -25,7 +25,7 @@ do_action( 'rad_doctype' ); ?>
 
 <body <?php body_class(); ?>>
     <?php
-    do_action( 'rad_before_wrapper' );
+    do_action( 'rad_before_site_wrapper' );
 
     $site_wrapper_element_open = '<div id="site-wrapper" class="site-wrapper">';
     echo apply_filters( 'rad_site_wrapper_element_open', $site_wrapper_element_open );

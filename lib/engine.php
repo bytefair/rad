@@ -21,7 +21,7 @@
 function engine() {
     get_header();
 
-    $site_open  = '<div id="site-content" class="site-content" role="main">';
+    $site_open  = '<div id="page-content" class="page-content" role="main">';
     echo apply_filters( 'rad_site_div_element_open', $site_open );
 
     do_action( 'rad_before_content' );

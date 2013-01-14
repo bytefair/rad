@@ -27,7 +27,7 @@ $site_wrapper_element_close = '</div>';
 echo apply_filters( 'rad_site_wrapper_element_close', $site_wrapper_element_close );
 
 do_action( 'rad_after_site' );
-do_action( 'rad_after_wrapper' );
+do_action( 'rad_after_site_wrapper' );
 
 wp_footer(); ?>
 
